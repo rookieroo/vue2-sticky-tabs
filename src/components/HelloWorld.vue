@@ -30,8 +30,8 @@
 </template>
 
 <script>
-  import vTabs from './tabs/vTabs'
-  import vTab from './tabs/vTab'
+import vTabs from './tabs/vTabs'
+import vTab from './tabs/vTab'
 export default {
   name: 'HelloWorld',
   components: {
@@ -48,14 +48,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.tabs-block{
-    position: relative;
-    .tabs-title { display: -webkit-flex; display: flex; background-color: #fff; text-align: center; width: 100%; left: 0px; top: 0; z-index: 1000 }
-    .tabs-title .tab { -webkit-flex: 1; flex: 1; padding: .5rem; border-left: 1px solid #ddd; border-bottom: 1px solid #ddd; }
-    .tabs-title .tab:first-child { border-left: 0; }
-    .tabs-title .tab.active { border-bottom: 3px solid #08acaa; }
-    .tabs-content { background-color: #fff;  }
-  }
+
 h1, h2 {
   font-weight: normal;
 }

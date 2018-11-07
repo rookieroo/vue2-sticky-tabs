@@ -47,7 +47,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="stylus" rel="stylesheet/stylus">
 
 h1, h2 {
   font-weight: normal;
@@ -62,5 +62,39 @@ li {
 }
 a {
   color: #42b983;
+}
+.tabs-block {
+  position: relative;
+  font-size 14px
+  min-height: 500px;
+  .tabs-title {
+    display: -webkit-flex;
+    display: flex;
+    background-color: #fff;
+    text-align: center;
+    cursor:pointer
+    width: 740px;
+    /*left: 185px;*/
+    top: 0;
+    z-index: 1000
+  }
+  .tabs-title .tab {
+    /*-webkit-flex: 1;*/
+    /*flex: 1;*/
+    display inline-block;
+    width:150px;
+    padding: .5rem;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+  .tabs-title .tab:first-child {
+    border-left: 0;
+  }
+  .tabs-title .tab.active {
+    border-bottom: 3px solid #ff8400;
+  }
+  .tabs-content {
+    background-color: #fff;
+  }
 }
 </style>
